@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+     
+<!--- I got the fonts from googlefonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+
+
+     <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="assets/">
+
+     <script src="javascipt.js"></script>
+     
+    </head>
+    <body>
+
+       <!-- I used b to make it bold in some parts of the code ,
+         I used P to jump lines -->
+
+
+       <!--The main name  of my wedsite-->
+     
+     
+    <nav class=" navbar">
+    <div class="logo">
+    <h1> UPlusUs </h1>
+
+
+     <!--- I have cretaed a class for the menu part , top of the page-->
+     </div>
+     <div class="list">
+        <a href="formulario.html"> Login</a> 
+        <a href="sematic.html" > Watchlist </a>
+        <a href="sematic.html" > Exchange </a>
+        <a href="mens.html" > Mens</a>
+       <!-- I used # so does not link to a page -->
+        <a href ="#"> Cart </a>
+        <a id="bottom" href="formulario.html"> Contact us </a>
+
+    </div>
+    </nav>
+         <!-- I have cretaed a class for the  headline New Looks fom Old favourites part -->
+     <header class="header"> 
+    <div class="headline"> 
+    <h2 style=" letter-spacing: 7px; margin-left: 26%;" >NEW LOOKS </h2> 
+    <h2 style=" font-size: 47px;">FROM OLD FAVOURITES </h2>
+    <a href="mens.html" class=" shop-now"> SHOP NOW </a>
+    <div class="img-headline"></div>
+          
+     </div>
+     </header>
+      <!-- For the section of  Who We Are . I created a section to separate in three blocks -->
+     <section>
+      <h2> YOUR WARDROBE HOLDS MORE VALUE THAN YOU THINK </h2>
+      
+      <!--- I have creted another class to create some section for the website information. -->
+      <p> TOO MUCH CLOTHES? SEND TO US AND WE WILL RESALE TO YOU <P>
+      <div class=" services "> 
+      <div class=" card">
+      <img src="assets/shopbag.png" widtth="75" height="75">
+     
+     <div class=" card-text">
+      
+    <h3> How To Send ? </h3>
+    <p> SENDING YOUR CLOTHES</p>
+    <a href="whoweare.html"> Details </a>
+    </div>
+    </div>
+     <div class=" card">
+    <img src="assets/workers.png" widtth="80" height="80">
+    <div class=" card-text">
+      
+    <h3> Who We Are?  </h3>
+    <P> READ OUR HISTORY  </P>
+    <a href="whoweare.html"> Details </a>
+    </div>
+    </div>
+
+    <div class=" card">
+    <img src="assets/sustain.png" widtth="80" height="80">
+    <div class=" card-text">
+    <h3>CYCLE</h3>
+    <P> WE SHARE OUR LOVE </P>
+    <a href="whoweare.html"> Details </a>
+    </div>
+    </div>
+    </div>
+    </section>
+
+
+       
+
+    <!--- Pictures  for women categiories, made the classes with div so they can stay inline-->
+    <!-- Womens categories but not clickeball-->
+         
+   <div class=" borda">
+   <a href="mens.html" > MIXED CATEGORIES </a>
+   </div>
+        
+  <!-- Made a  div class so the pictures can  have the label's name under-->
+  <div class="container">
+
+
+  <div class4=" GREENSKIRT">
+  <img src="assets/greenskirt.jpg" width="400" height="400">
+  <p>ZARA</p>
+  <p>Long Skirt <p>
+  <p> £30.00 <p>
+  <p> Add to Cart</p>
+   <!-- I created the buttom to add to cart -->
+  <button onclick= "addToCart()" Add to Cart ></button> 
+
+
+   </div>
+
+  <div class4=" SHIRTS">
+  <img src="assets/whiteshirt.jpg" width="400" height="400">
+  <p>LA ROCHETTE </p>
+  <p> Shirt Long Sleeve<p>
+  <P> £ 40.00 <P>
+  </div>
+  
+  <div class5=" SHOES">
+  <img src="assets/shoes1.jpg" width="400" height="400">
+         <p>SHOES</p>
+         <P> Dolce Gabbana Shoes <P>
+          <p> £150.00<p>
+
+
+ </div>
+
+ <div class6=" ACESSORIES">
+
+ <img src="assets/acessories.jpg" width="400" height="400">
+ <p>ACESSORIES</p>
+ <p> Multibrands Acessories <p>
+ <p> From £20.00 <p>
+ </div> 
+ </div> 
+ <div class=" signup"> 
+ <a href="formulario.html">SIGN UP FOR 20% OFF</a>
+
+ <p id= "text"> SIGN UP</p>
+ <p>
+
+ <script>
+   document.getElement("text").innerHTML= "<b> SIGN UP</b>";
+
+   function addToCart() {
+    alert( "Item added to cart"); 
+   }
+
+  </script>
+</p>
+
+</div>
+
+<!--- I have created a class for the footer bottom of the page -->
+<footer> 
+
+<div class="logo-footer"> 
+<h1 class="agency" > UPlusUs</h1>
+<p> Past and present clothes. </p>
+</p> <h3> Learn About Recycle Clothes </h3>
+<a href=" https://youtu.be/7i0QMnz4ExY?si=t9S6QGXnlPiMKoLI">CLICK HERE </a> <h4> <u> Help </h4>
+ 
+ </footer>
+
+
+<!--- I have collected the link from wa.link. I learned from my course Hotmart :  Genial courses.  -->
+ <a class ="whats" href="https://wa.link/sr45zj"><img style=" width: 60px; " src="assets/whatsapp.png"></a>
+  
+
+</body>
+</html>

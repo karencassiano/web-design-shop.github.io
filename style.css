@@ -1,0 +1,323 @@
+/* I got the font from google fonts*/ 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Science+Gothic:wght@100..900&display=swap');
+
+*{
+     box-sizing: border-box;
+}
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 700px) {
+    body{ 
+        background: rgb(201, 239, 143);
+    }
+.headline{
+    display:none;
+}
+.whats{
+display:none
+}
+#bottom{ 
+    margin-bottom: 10px;
+}
+.container{
+    justify-content: flex-end;
+
+}
+h3{ 
+    font-size:xx-small;
+}
+}
+
+
+
+/* Learned with W3 sCHOOL.  Tablets, Smartphones + large mobiles  600px up) */
+@media only screen and (min-width: 600px) {
+body {
+    background: rgb(147, 185, 115);
+}
+.card{
+    font-size:xx-small;
+    width:30%;
+}
+}
+/* Dispositives mediums (Tablets landscapes 768px up ) */
+@media only screen and (min-width: 768px) {
+body{ 
+    background: rgb(153, 192, 186);
+}
+.container{
+    justify-content:first baseline;
+}
+.card{
+    padding: 30px;
+    width: 40%;
+
+}
+h3{ 
+    font-size: small;
+}
+}
+
+    /* Super Larges (Bigger screens laptops, desktops and also TVs, 1200px up) */
+@media only screen and (min-width: 1200px) {
+body {
+    background: rgb(247, 245, 245);
+}
+.container{
+    justify-content: center;
+}
+}
+
+
+/* Using for the UPlusUs navigation bar */ 
+.navbar{
+    height: 70px;
+    background: white;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* BORDER RED 
+    border:1px solid red ;*/ 
+    text-align: center;
+}
+
+/* Used for the logo UplusUs */
+.logo{
+    
+  font-family: "Dancing Script", cursive;
+  font-size: x-large;
+  font-style: normal;
+  margin-left: 3%;
+
+}
+/* List menu bar to make them to the right side and the text aligned  */
+
+.list{
+    flex: 80%; 
+   text-align:right;
+   padding: 30px;
+
+}
+.list a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    padding:20px 16px;
+}
+/* I gave a border to the menu bar ( log in, wtachlost, exchange, mens, bag), whem mouse hover comes the green color 
+and a black margin */ 
+.list a:hover{ 
+color: rgb(20, 232, 204);
+border-top: 4px solid black;
+}
+
+/* I gave the class border to make block Women's categories*/
+.borda{
+    margin-right: 60%;
+    margin-left: 15px;
+    background-color: rgb(248, 251, 244);
+    padding:7px;
+    margin-top: 0.8cm;
+    margin-bottom: 10px;
+}
+
+/* I used hover to change the color when the mouse goes 
+over the word (womens categories)*/
+.borda:hover{
+background-color: rgb(6, 237, 129);
+}
+/* Contact us bottom  */ 
+#bottom{
+    background: rgb(39, 60, 92); 
+    padding: 10px 25px; 
+    color: aliceblue;
+    border-radius: 5px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+/* CONTACT US */ 
+ #bottom:hover{
+    border:none;
+    background-color: rgb(151, 128, 34);
+
+ }
+
+p7{
+    font-size: xx-large;
+    margin-bottom: 70px;
+}
+
+/* Used to put the pictures in line*/ 
+.container{
+    display: flex;
+    gap:5px;
+}
+
+ /*Too much cothes*/
+h5{
+    margin-left: 3cm;
+    font-size: x-large;
+    margin-top: 30px;
+    font-family:  "Science Gothic", sans-serif;
+}
+/* The green box */ 
+.header{
+    /* To divide in two items on my header */ 
+    display: flex;
+    flex-flow: row wrap;
+    height: 290px;
+    background: rgb(88, 228, 66);
+} 
+/* The green box ( New Looks from Old Favourites*/ 
+.headline{ 
+margin-left:35%;
+justify-content: center;
+margin-top: 4%;
+font-family: 'Times New Roman', Times, serif;
+font-size:x-large;
+}
+/* to attach the letters */
+.headline h2 {
+    margin: 0;
+    padding: 0;
+}
+/* Shop now box*/ 
+.shop-now{
+    display: inline-block;
+    align-content: center;
+    color: aliceblue;
+    background: rgb(237, 178, 27);
+    text-decoration: none;
+    margin-left: 35%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: bottom 70px;
+}
+.shop-now:hover{
+    background-color:rgb(209, 230, 173) ;
+
+}
+/* Tour Wardrobe Hold more valeu than you think  */
+section{
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 500px;
+    padding: 5%;
+    text-align: center;
+    width: 90%;
+    font-family:"Science Gothic", sans-serif;
+}
+/* How to send, Who we are and work together writting */ 
+section h3{ 
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif; 
+    font-weight: bold;
+    color: black;
+}
+/* Created to display the box in line */ 
+.services{
+
+   display: block;
+    margin-top: 5%;
+}
+
+/* I created the card to have each section such as the How to send the clothes, who we are and 
+we work together */ 
+.card{
+    display: inline-block;
+    width: 20%;
+    padding:10px;
+    margin:1%;
+    border:1px solid rgb(27, 21, 21);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+/* created to have the cards popping up. When click with the mouse  
+it shows white as i created the card hover . There is a text blind under the card */ 
+.text-blind{
+    display:none;
+}
+
+/* When pass the mouse turns in green colour*/
+.card:hover{
+    background: rgb(157, 244, 163);
+    color: rgb(52, 80, 55);
+    padding:35px; 
+}
+/* WHEN PASS THE MOUSE THE IMAGE DISAPPEAR */ 
+.card:hover img{
+    display: none;
+}
+.card:hover.card-text{
+    display:none;
+}
+.card:hover.text-blind{
+    display: block;
+}
+/* CREATED FOR THE BOTTOM SPACE */ 
+footer{
+    margin-top: 100px;
+    height: 400px;
+    background-image: linear-gradient(180deg,rgb(62, 244, 141), rgb(15, 255, 35), rgb(84, 235, 124));
+   text-align:center;
+   border-top: 2px solid black;
+
+}
+/* For the logo to stay centred middle */ 
+.logo-footer{
+    padding: 100px;
+}
+.agency{
+  font-family: "Dancing Script", cursive;
+  font-size:xx-large;
+  font-style: normal;
+
+}
+/* Learned from Hotmart Course , for the What's App symbol do stay fixed on the screen */
+.whats{
+    position:fixed;
+    bottom:5px;
+    right: 5px;
+    
+}
+/* Sign up Java script */ 
+h6{
+    font-size: large;
+    margin-bottom: 5px;
+}
+/* I have cretaed the div for the sign up session */ 
+.signup{
+ background: rgb(201, 227, 208);
+ padding:20px;
+ margin-top: 40px;
+}
+.aboutus{
+    background:rgb(179, 241, 182);
+    padding: 100px;
+    margin-top: 60px;
+    font-size:large;
+    text-align: center;
+    font-size: x-large;
+}
+/* Created for the sign up  20% OFF section*/ 
+.signup{
+    font-size:large;
+    font-family:"Science Gothic", sans-serif;
+
+}
+/* I have creted for the Sematic.html for the section watchlist and swapping. */ 
+.page1{
+    background: rgb(196, 224, 154);
+    background-color: rgb(95, 241, 93);
+    font-size: large;
+}
+/* I have created the container flex for the men section pictures 
+to be next to each other. */ 
+.containerm{
+    display: flex;
+    margin-top: 20px;
+
+}
